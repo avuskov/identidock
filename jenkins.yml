@@ -4,8 +4,8 @@ identidock:
                 - "9090"
         environment:
                 ENV: PROD
-        volumes:
-                - ./app:/app
+                #        volumes:
+                #                - ./app:/app
         links:
                 - dnmonster
                 - redis
