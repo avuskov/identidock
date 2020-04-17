@@ -8,6 +8,7 @@ elif [ "$ENV" = 'UNIT' ]; then
 	echo "Running unit tests"
 	pwd
 	ls -la
+	ls -la ..
 	exec python "tests.py"
 else
 	echo "Running Production Server"
