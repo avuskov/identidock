@@ -6,6 +6,7 @@ if [ "$ENV" = 'DEV' ]; then
 	exec python "identidock.py"
 elif [ "$ENV" = 'UNIT' ]; then
 	echo "Running unit tests"
+	pwd
 	ls -la
 	exec python "tests.py"
 else
